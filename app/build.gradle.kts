@@ -51,6 +51,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.2")
+    implementation("com.google.android.play:app-update-ktx:+")
 
     //Test code
     testImplementation("junit:junit:4.13.2")
