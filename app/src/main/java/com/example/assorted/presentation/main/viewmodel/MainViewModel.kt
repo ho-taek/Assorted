@@ -15,4 +15,6 @@ class MainViewModel @Inject constructor() : ViewModel() {
     fun setLightCheck(){
         _lightCheck.value = !lightCheck.value
     }
+
+
 }

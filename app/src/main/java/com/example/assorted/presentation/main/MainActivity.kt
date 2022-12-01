@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.IntentSender
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -57,6 +58,7 @@ class MainActivity  : BaseActivity<ActivityMainBinding>(R.layout.activity_main) 
         clickLight()
         setLight()
         updateVersion()
+        setPrivacyUri()
     }
 
     override fun onResume() {
@@ -96,7 +98,7 @@ class MainActivity  : BaseActivity<ActivityMainBinding>(R.layout.activity_main) 
         try {
             appUpdateManager.startUpdateFlowForResult(
                 appUpdateInfo,
-                AppUpdateType.FLEXIBLE, // or AppUpdateType.IMMEDIATE
+                AppUpdateType.IMMEDIATE, // or AppUpdateType.IMMEDIATE
                 this,
                 UPDATE
             )
@@ -154,6 +156,12 @@ class MainActivity  : BaseActivity<ActivityMainBinding>(R.layout.activity_main) 
                 binding.btnLight.isSelected = it
             }
             .launchIn(lifecycleScope)
+    }
+    fun setPrivacyUri(){
+        binding.textPrivacy.setOnClickListener {
+            val uri = Uri.parse(getString(R.string.privacy_uri))
+            startActivity(Intent(Intent.ACTION_VIEW, uri))
+        }
     }
 
     companion object {
