@@ -35,6 +35,27 @@
             app:layout_constraintStart_toStartOf="@+id/btn_light"
             app:layout_constraintTop_toBottomOf="@+id/btn_light" />
 
+        <ImageButton
+            android:id="@+id/btn_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/vibrate"
+            app:layout_constraintStart_toEndOf="@+id/btn_light"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/vibrate"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_vibrate"
+            app:layout_constraintStart_toStartOf="@+id/btn_vibrate"
+            app:layout_constraintTop_toBottomOf="@+id/btn_vibrate" />
+
         <TextView
             android:id="@+id/text_privacy"
             android:layout_width="wrap_content"

@@ -2,6 +2,7 @@
     <string name="app_name">모듬</string>
 
     <!-- 앱 관련 -->
+    <string name="vibrate">마사지</string>
     <string name="light">손전등</string>
     <string name="privacy">개인정보처리방침</string>
     <string name="privacy_uri">https://profuse-methane-a38.notion.site/56a83c2c3a254e06b1651f6a56433a1c</string>
