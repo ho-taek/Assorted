@@ -1,7 +1,6 @@
 package com.example.assorted.presentation.main
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.content.IntentSender
 import android.net.Uri
@@ -9,23 +8,14 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.content.res.ResourcesCompat
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
-<<<<<<< Updated upstream:app/src/main/java/com/example/assorted/presentation/main/MainActivity.kt
 import com.example.assorted.R
 import com.example.assorted.databinding.ActivityMainBinding
 import com.example.assorted.presentation.base.BaseActivity
 import com.example.assorted.presentation.light.Torch
 import com.example.assorted.presentation.main.viewmodel.MainViewModel
-=======
-import com.assorted.R
-import com.assorted.databinding.ActivityMainBinding
-import com.assorted.presentation.base.BaseActivity
-import com.assorted.presentation.light.Torch
-import com.assorted.presentation.main.viewmodel.MainViewModel
-import com.assorted.presentation.vibrate.VibrateActivity
->>>>>>> Stashed changes:app/src/main/java/com/assorted/presentation/main/MainActivity.kt
+import com.example.assorted.presentation.vibrate.VibrateActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.play.core.appupdate.AppUpdateInfo
 import com.google.android.play.core.appupdate.AppUpdateManager
@@ -39,6 +29,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
+
 
 @AndroidEntryPoint
 class MainActivity  : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
@@ -168,19 +159,16 @@ class MainActivity  : BaseActivity<ActivityMainBinding>(R.layout.activity_main) 
             }
             .launchIn(lifecycleScope)
     }
-<<<<<<< Updated upstream:app/src/main/java/com/example/assorted/presentation/main/MainActivity.kt
-    fun setPrivacyUri(){
-=======
+
     //개인정보 처리 동의
-    fun setPrivacyUri() {
->>>>>>> Stashed changes:app/src/main/java/com/assorted/presentation/main/MainActivity.kt
+    private fun setPrivacyUri() {
         binding.textPrivacy.setOnClickListener {
             val uri = Uri.parse(getString(R.string.privacy_uri))
             startActivity(Intent(Intent.ACTION_VIEW, uri))
         }
     }
     //마사지 클릭
-    fun clickMassage(){
+    private fun clickMassage(){
         binding.btnVibrate.setOnClickListener {
             startActivity(Intent(this, VibrateActivity::class.java))
         }

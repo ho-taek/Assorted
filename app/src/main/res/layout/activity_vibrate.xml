@@ -33,7 +33,7 @@
             android:layout_marginBottom="50dp"/>
 
         <ImageView
-            android:id="@+id/btn_vibrate_first"
+            android:id="@+id/img_vibrate_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_vibrate_one"
@@ -43,32 +43,32 @@
             app:layout_constraintBottom_toTopOf="@+id/btn_vibrate_up"/>
 
         <ImageView
-            android:id="@+id/btn_vibrate_second"
+            android:id="@+id/img_vibrate_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_vibrate_two"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btn_vibrate_first"/>
+            app:layout_constraintBottom_toTopOf="@+id/img_vibrate_first"/>
 
         <ImageView
-            android:id="@+id/btn_vibrate_third"
+            android:id="@+id/img_vibrate_third"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_vibrate_three"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btn_vibrate_second"/>
+            app:layout_constraintBottom_toTopOf="@+id/img_vibrate_second"/>
 
         <ImageView
-            android:id="@+id/btn_vibrate_fourth"
+            android:id="@+id/img_vibrate_fourth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_vibrate_four"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/btn_vibrate_third"/>
+            app:layout_constraintBottom_toTopOf="@+id/img_vibrate_third"/>
 
 
 
