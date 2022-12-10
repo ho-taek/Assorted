@@ -1,4 +1,4 @@
-package com.example.assorted
+package com.assorted
 
 import org.junit.Test
 

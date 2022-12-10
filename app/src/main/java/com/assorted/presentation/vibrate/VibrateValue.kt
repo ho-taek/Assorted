@@ -1,4 +1,4 @@
-package com.example.assorted.presentation.vibrate
+package com.assorted.presentation.vibrate
 
 enum class VibrateValue(val value: Int) {
     ZERO(0){

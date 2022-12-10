@@ -1,4 +1,4 @@
-package com.example.assorted.presentation.vibrate
+package com.assorted.presentation.vibrate
 
 import android.content.Context
 import android.os.*
@@ -7,10 +7,10 @@ import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import com.example.assorted.R
-import com.example.assorted.databinding.ActivityVibrateBinding
-import com.example.assorted.presentation.base.BaseActivity
-import com.example.assorted.presentation.vibrate.viewmodel.VibrateViewModel
+import com.assorted.R
+import com.assorted.databinding.ActivityVibrateBinding
+import com.assorted.presentation.base.BaseActivity
+import com.assorted.presentation.vibrate.viewmodel.VibrateViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach

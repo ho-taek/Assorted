@@ -9,7 +9,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.example"
+        applicationId = "com.assorted"
         minSdk = 23
         targetSdk = 32
         versionCode = 2

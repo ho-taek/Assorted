@@ -1,4 +1,4 @@
-package com.example.assorted.presentation.main
+package com.assorted.presentation.main
 
 import android.app.Activity
 import android.content.Intent
@@ -10,12 +10,12 @@ import androidx.activity.viewModels
 import androidx.core.content.res.ResourcesCompat
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import com.example.assorted.R
-import com.example.assorted.databinding.ActivityMainBinding
-import com.example.assorted.presentation.base.BaseActivity
-import com.example.assorted.presentation.light.Torch
-import com.example.assorted.presentation.main.viewmodel.MainViewModel
-import com.example.assorted.presentation.vibrate.VibrateActivity
+import com.assorted.presentation.base.BaseActivity
+import com.assorted.presentation.light.Torch
+import com.assorted.presentation.main.viewmodel.MainViewModel
+import com.assorted.presentation.vibrate.VibrateActivity
+import com.assorted.R
+import com.assorted.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.play.core.appupdate.AppUpdateInfo
 import com.google.android.play.core.appupdate.AppUpdateManager

@@ -1,4 +1,4 @@
-package com.example.assorted.di
+package com.assorted.di
 
 import android.app.Application
 import android.content.Context

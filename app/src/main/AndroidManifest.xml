@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.assorted">
+    package="com.assorted">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <application
-        android:name=".di.AssortedApplication"
+        android:name="com.assorted.di.AssortedApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,14 +17,14 @@
         tools:replace="label"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.vibrate.VibrateActivity"
+            android:name="com.assorted.presentation.vibrate.VibrateActivity"
             android:exported="false">
             <meta-data
                 android:name="andro id.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".presentation.main.MainActivity"
+            android:name="com.assorted.presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

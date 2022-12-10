@@ -1,4 +1,4 @@
-package com.example.assorted.presentation.light
+package com.assorted.presentation.light
 
 import android.content.Context
 import android.hardware.camera2.CameraCharacteristics
