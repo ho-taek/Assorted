@@ -10,7 +10,7 @@ import timber.log.Timber
 class AssortedApplication : Application() {
     init{
         instance = this
-        Timber.plant(Timber.DebugTree())
+        if(BuildConfig.DEBUG)Timber.plant(Timber.DebugTree())
     }
 
     companion object{

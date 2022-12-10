@@ -20,9 +20,10 @@ android {
 
     buildTypes {
         getByName("debug"){
-            isDebuggable = true
+            manifestPlaceholders["appName"] = "@string/app_name_dev"
         }
         getByName("release") {
+            manifestPlaceholders["appName"] = "@string/app_name"
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
