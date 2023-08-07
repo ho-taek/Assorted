@@ -2,20 +2,20 @@ package com.assorted.di
 
 import android.app.Application
 import android.content.Context
-import androidx.databinding.ktx.BuildConfig
+import com.assorted.BuildConfig
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 
 @HiltAndroidApp
 class AssortedApplication : Application() {
-    init{
+    init {
         instance = this
-        if(BuildConfig.DEBUG)Timber.plant(Timber.DebugTree())
+        if (BuildConfig.DEBUG) Timber.plant(Timber.DebugTree())
     }
 
-    companion object{
+    companion object {
         var instance: AssortedApplication? = null
-        fun context() : Context {
+        fun context(): Context {
             return instance!!.applicationContext
         }
     }
