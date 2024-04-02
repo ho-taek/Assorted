@@ -2,7 +2,6 @@ package com.assorted.di
 
 import android.app.Application
 import android.content.Context
-import com.assorted.BuildConfig
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 
@@ -10,7 +9,7 @@ import timber.log.Timber
 class AssortedApplication : Application() {
     init {
         instance = this
-        if (BuildConfig.DEBUG) Timber.plant(Timber.DebugTree())
+        Timber.plant(Timber.DebugTree())
     }
 
     companion object {
